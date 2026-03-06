@@ -893,6 +893,18 @@ footer {
     gap: 40px;
   }
 
+  .about-stats {
+    gap: 16px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .stat-num {
+    font-size: 2rem;
+  }
+
   .section-title {
     font-size: clamp(1.5rem, 8vw, 2.5rem);
     word-break: break-word;
@@ -942,6 +954,12 @@ footer {
   /* Ensure no body overflow */
   body {
     padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats {
+    grid-template-columns: 1fr;
   }
 }
 
